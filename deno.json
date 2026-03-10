@@ -60,6 +60,7 @@
   },
   "tasks": {
     "check": "deno fmt src/ && deno lint src/ && deno check src/",
+    "serve": "deno run --allow-net --allow-read src/api/Server.ts",
     "discover": "deno run --allow-net --allow-read --allow-write src/index.ts",
     "test": "deno fmt tests/ && deno lint tests/ && deno test --allow-net --allow-write --allow-read --no-check",
     "db:generate": "deno run -A npm:drizzle-kit generate",
@@ -69,6 +70,7 @@
   "imports": {
     "@db/sqlite": "jsr:@db/sqlite@^0.13.0",
     "@libsql/client": "npm:@libsql/client@^0.17.0",
+    "@neabyte/deserve": "jsr:@neabyte/deserve@^0.8.0",
     "@std/assert": "jsr:@std/assert@^1.0.18",
     "@app/": "./src/",
     "@data/": "./data/",
