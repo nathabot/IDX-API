@@ -1,6 +1,5 @@
 {
-  "build": {
-    "command": "deno task serve",
-    "install": "deno cache --reload src/api/Server.ts"
-  }
+  "buildCommand": "deno task serve",
+  "installCommand": "deno cache --reload src/api/Server.ts",
+  "outputDirectory": "."
 }
