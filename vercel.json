@@ -1,5 +1,6 @@
 {
-  "buildCommand": "deno task serve",
-  "installCommand": "deno cache --reload src/api/Server.ts",
-  "outputDirectory": "."
+  "buildCommand": "mkdir -p data && deno task db:sync",
+  "installCommand": "curl -fsSL https://deno.land/install.sh | sh",
+  "outputDirectory": ".",
+  "startCommand": "~/.deno/bin/deno task serve"
 }
